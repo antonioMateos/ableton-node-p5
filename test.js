@@ -89,13 +89,16 @@ kickEvent.emit('change',val);
   END BASIC CUSTOM EVENTS STRUCTURE */
 
 /* OBSERVE PARAMETERS -> Kick 808 LC */
-exports.kickObs = function() {
+exports.kickObs = function(ws) {
 	max.observe({
 		path: 'live_set tracks 1 devices 0 parameters 1',
 		property: 'value'
 	})
 	.on('value', function(val) {
 		console.log('Kick 808 Low Cut =',val);
+		if(ws){
+		ws.emit('msg', {name: "Kick 808 Low Cut", value: val})
+		}
 		// EVENT EMITTER => Kick 808 LC Value has change
 		// TODO -> Socket to Front => socket.emit('midiMsg',val)
 	});

@@ -1,5 +1,5 @@
 # ableton-node-p5
-Ableton wwith Node and P5.js
+Ableton with Node and P5.js
 
 ### Ableton Live 9
 

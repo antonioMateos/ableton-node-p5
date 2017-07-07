@@ -40,7 +40,7 @@ io.on('connection', function(socket){
 	socket.emit('msg',msg);
 
 	// KICK Ableton Observer
-	test.kickObs(); // EVENT LISTENER => Kick 808 LC Value has change 
+	test.kickObs(socket); // EVENT LISTENER => Kick 808 LC Value has change 
 	
 	/*
 	msg = abletonVal;

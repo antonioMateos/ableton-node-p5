@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>ABLETON LIVE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- SOCKET IO -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- P5 JS -->
+  <script src="./src/js/p5.min.js"></script>
+  <script src="./src/js/p5.dom.min.js"></script>
+  <script src="./src/js/p5.sound.min.js"></script>
+  <script src="./src/js/sketch.js"></script>
+
+</head>
+
+<style>
+
+* {
+  margin: 0;
+  padding:0;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,0.1);
+}
+
+canvas {
+  z-index: 10000;
+  position: absolute;
+  top:50px;
+  background: #fff;
+  left: calc(50% - 520px);
+}
+
+</style>
+
+<body>
+
+<div class="main">
+
+</div>
+
+<!-- SOCKET IO -->
+<!--
+<script src="/socket.io/socket.io.js"></script>
+<script src="./src/js/ws.js"></script>
+-->
+
+</body>
+</html>

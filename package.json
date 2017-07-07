@@ -1,0 +1,27 @@
+{
+  "name": "max4node",
+  "description": "Communicate with Ableton Live through Max for Live.",
+  "author": "Marco Sampellegrini <babbonatale@alpacaaa.net>",
+  "version": "0.1.2",
+  "main": "max4node.js",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/coffee -o . -c max4node.coffee",
+    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alpacaaa/max4node"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "osc-min": "^0.2.0",
+    "bluebird": "^2.6.4",
+    "socket.io": "^2.0.1",
+    "express": "^4.15.2",
+    "body-parser": "^1.17.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "mocha": "^2.1.0"
+  }
+}
